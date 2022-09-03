@@ -62,6 +62,10 @@ app.post("/",function(req,res){
 })
 
 
+app.post("/failure.html" ,function(req,res){
+    res.redirect("/")
+})
+
 
 app.listen(process.env.PORT,function(){
     console.log("server is succesfully running")
